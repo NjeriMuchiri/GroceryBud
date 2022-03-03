@@ -11,10 +11,43 @@
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/c07b1a4be4.js" crossorigin="anonymous"></script>
     <!-- our stylesheet -->
     <link rel="stylesheet" href="stylebud.css">
 </head>
 <body>
+    <section class="section-center">
+       <!-- form -->
+       <form class="grocery-form">
+           <p class="alert"></p>
+           <h3>grocery shopping <i class="fas fa-basket-shopping"></i></h3>
+           <div class="form-control">
+               <input type="text" id="grocery" placeholder="e.g eggs" />
+               <button type="submit" class="submit-btn">Check-list</button>
+           </div>
+       </form>
+
+       <!-- list -->
+       <div class="grocery-container">
+           <div class="grocery-list">
+               <article class="grocery-item">
+               <p class="title">item</p>
+               <div class="btn-container">
+                   <button type="button" class="edit-btn">
+                       <i class="fas fa-edit"></i>
+                   </button>
+                   <button type="button" class="delete-btn">
+                       <i class="fas fa-trash"></i>
+                   </button>
+               </div>
+               </article>
+           </div>
+           <!-- button -->
+           <button type="button" class="clear-btn">Clear-items</button>
+       </div>
+        </div>
+    </section>
     
     <script src="appbud.js"></script>
 </body>
