@@ -9,6 +9,10 @@
     background:#e0ffff;
     border-radius: 20px;
     padding:2rem;
+    margin:auto;
+    margin-top:70px;
+    width:90vw;
+    max-width:40rem;
     transition:all 0.3s linear;
 }
 .alert{
@@ -27,7 +31,7 @@
     background:#b2ffff;
 }
 .alert-success{
-    color:#00b7eb;
+    color:#b2ffff;
     background: #008b8b;
 }
 .grocery-form h3{
