@@ -72,7 +72,7 @@
 }
 .grocery-container{
     margin-top:2rem;
-    /* visibility:hidden; */
+    visibility:hidden;
     transition:all 0.3s linear;
 }
 .show-container{
