@@ -56,7 +56,11 @@ function addItem(e) {
             // set back to default
             setBackToDefault();
     }else if(value  && editFlag){
-
+        editElement.innerHTML = value;
+        displayAlert('Value changed','success');
+        // edit local storage
+        editLocalStorage(editID,value);
+        setBackToDefault();
     }else{
      displayAlert('please enter value', 'danger')
     }
@@ -118,8 +122,28 @@ function editItem(e){
  }
 // local storage
 function addToLocalStorage(id,value){
+   const grocery = {id,value};
+   let items = localStorage.getItem("list")
+    ? JSON.parse(localStorage.getItem('list'))
+    : [];
+    console.log(items);
 
+   items.push(grocery);
+   localStorage.setItem('list',JSON.stringify(items))
 }
 function removeFromLocalStorage(id){
+    
+}
+function editLocalStorage(id, value){
 
 }
+// localStorage API
+// setItem
+// getItem
+// removeItem
+// save as strings
+
+// localStorage.setItem("orange",JSON.stringify('item1','item2'));
+// const oranges = JSON.parse(localStorage.getItem(oranges));
+// console.log(oranges);
+// localStorage.removeItem("orange");
